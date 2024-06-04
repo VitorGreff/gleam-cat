@@ -10,9 +10,6 @@ pub fn read_lines(path: String) -> List(String) {
     Ok(c) -> {
       c
       |> string.split("\n")
-      |> list.reverse()
-      |> list.drop(1)
-      |> list.reverse()
     }
     Error(_) -> []
   }
